@@ -42,8 +42,18 @@ def get_sensors(session):
             if item.get('vrf', None) == 'Tetration':
                 continue
             else:
-                intf = list(map(lambda x: {"ip": x['ip'], "type": x['family_type'],
-                                           "vrf": x['vrf'], "mac": x['mac']}, entry['interfaces']))
+                intf = []
+
+                for interface in entry['interfaces']:
+                    my_ip = interface['ip']
+                    my_family_type = interface['family_type']
+                    my_vrf = interface['vrf']
+                    if "mac" in interface.keys():
+                        my_mac = interface['mac']
+                    else:
+                        my_mac = "No MAC Address Assigned"
+                    intf.append({"ip": my_ip, "type": my_family_type,"vrf": my_vrf, "mac": my_mac})
+
                 print "=" * 80
                 print entry['host_name']
                 for my_int in intf:

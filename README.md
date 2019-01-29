@@ -3,7 +3,7 @@ Created by Michael Petrinovic 2018
 Sample Tetration Scripts for:
 * Cisco Live Melbourne 2018: BRKDCN-2602
 * Cisco Live USA 2018: BRKDCN-2011
-
+* Cisco Live Barcelona 2019: BRKDCN-2011
 
 Be sure to download the API Key from your Tetration platform. When generating the key, it allows you to specify the access rights for that key. Furthermore, once generated, it allows you to download a JSON file, that contains the 'api_key' and 'api_secret'
 

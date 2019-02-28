@@ -193,6 +193,11 @@ def main():
     if resp.status_code == 200:
         results = resp.json()
 
+        # Adding check to ensure that the returned dataset if it is empty, that we need to error out and exit
+        if not results:
+            print ("Returned TopN data set is empty. Please check your Tetration cluster for traffic being captured\n")
+            exit(0)
+
         # Loop through the results returned
         for entry in results[0]['result']:
             # Perform a DNS lookup, using the local system's DNS providers - i.e. the host running this script

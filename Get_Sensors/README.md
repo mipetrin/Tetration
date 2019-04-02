@@ -1,23 +1,22 @@
 Sample script that allows you to extract all of the sensors (both Hardware and Software) connected to the Tetration Platform, and provide you with information about each sensor. 
 
 It will produce output that collects the following information:
+
 * Software Sensors:
-** UUID
-** CPU Quota
-** Platform
-** Hostname
-** Current S/W Version
-** PID Lookup
-** Agent Type (Deep Visibility Agent / Universal Visibility Agent / Enforcement Agent)
-
+  * UUID
+  * CPU Quota
+  * Platform
+  * Hostname
+  * Current S/W Version
+  * PID Lookup
+  * Agent Type (Deep Visibility Agent / Universal Visibility Agent / Enforcement Agent)
 * Hardware Sensors:
-** Name
-** IP
-** Last Check-In
-** NX-OS Version
-** Role
-** Agent Version
-
+  * Name
+  * IP
+  * Last Check-In
+  * NX-OS Version
+  * Role
+  * Agent Version
 * Furthermore, the script will also provide you with a breakdown of each host (that has a Software agent installed), what interfaces they have configured, and other information such as IP and MAC Address
 
 

@@ -7,12 +7,11 @@ Sample Tetration Python Scripts from various presentations that I do at Cisco Li
 * Cisco Live San Diego 2019: BRKDCN-2011
 
 
-*NOTE* Be sure to download the API Key from your Tetration platform. When generating the key, it allows you to specify the access rights for that key. Furthermore, once generated, it allows you to download a JSON file, that contains the 'api_key' and 'api_secret'
+**NOTE** Be sure to download the API Key from your Tetration platform. When generating the key, it allows you to specify the access rights for that key. Furthermore, once generated, it allows you to download a JSON file, that contains the 'api_key' and 'api_secret'
 
 Download them, be sure to then specify this file with the -c option.
 
 > Within each sub-directory, is the script and an additional README. It will be documented in that README what each script is expected to achieve and how to use that particular script. 
-
 
 
 Created by Michael Petrinovic 2018
